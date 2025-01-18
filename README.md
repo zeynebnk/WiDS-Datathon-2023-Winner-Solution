@@ -8,7 +8,7 @@ Hello all!
 
 I'm Zeyneb, a junior at Saratoga High School and the High School Winner of this year's WiDS Datathon! I am also a WiDS Ambassador from the Bay Area. I have experience working with data science and machine learning in projects and research, yet this was a relatively new area of application for me--I usually work with NLP and text. I joined a little later on in the competition, about February. It was really and amazing oppertunity to learn and I was able to apply a lot of new skills and learn new methods working on such and interesting problem to solve real-world problems. I had a lot of fun, and I would love to thank everyone at WiDS for making these events so that people like me can really grow and experience real data science! I got to explore a lot of new things working on this, and I wanted to share my approach and findings in the problem! Please don't hesitate to contact me with any questions or comments!
 
-Data Exploration:
+**Data Exploration:**
 
 Right from the start, the data presented some very interesting characteristics. There is a looong time gap between train and test data, a significant differnece in the value distritbutions of the features, and outliers that seems to have comparably more/less temperature change over time. Of course, these can result in some interesting behaviors in the models, explored later below.
 

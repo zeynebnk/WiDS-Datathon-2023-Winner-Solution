@@ -37,4 +37,5 @@ I expected overfitting and shakeup in the private leaderboard but I decided to e
 3. Pseudolabel test data from CB1 predictions and build CatBoost model, CB_PL0, with the same hyperparameters from step 2 on train+test data.
 4. Ensemble LGB0, CB0 and CB_PL0 models and use these predictions to pseudolabel test data and build a CatBoost model CB_PL1 with the same CatBoost hyperparameters as Steps 2 and 3, but increase iterations to 25K. Also build LightGBM model, LGB_PL1. Ensemble these two models, also ensemble with the previously ensembled models. i.e., New predictions are from ensembling 5. LGB0, CB0, CB_PL0, LGB_PL1 and CB_PL1.
 5. Use the latest predictions to pseudolabel tets data and build climate expert models. Ensemble climate experts predictions with the latest ensemble to get the final submission.
+
 • The models run in just over an hour.

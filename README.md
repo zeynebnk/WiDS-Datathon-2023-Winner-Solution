@@ -31,7 +31,7 @@ I expected overfitting and shakeup in the private leaderboard but I decided to e
 • A key method I used is "iterative pseudolabeling" the test data to incoperate into the training, explained further.
 • I primarilly worked with CatBoost and LightGBM models, combining train and pseudo labeled test data, and ensemble the resulting models with previous steps' ensembled model. I iterate over 2 times and finally ensemble with climate region experts. While ensembling, the idea that I used is favoring the most recent model more, and use the ensembled (new and previous step's model) predictions only if the absolute difference between these predictions is below a certain threshold that is set based on experiment. If they differ a lot then use the new model. 
 
-**Final Approach Steps:**
+Final Approach Steps:
 1. Build LightGBM and CatBoost models, LGB0 and CB0.
 2. Build CatBoost Model, CB1, on train data with another set of hyperparameters (2K iterations)
 3. Pseudolabel test data from CB1 predictions and build CatBoost model, CB_PL0, with the same hyperparameters from step 2 on train+test data.

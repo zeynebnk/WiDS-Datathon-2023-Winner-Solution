@@ -1,5 +1,5 @@
 
-This repository contains my annotated winner solution to the 2023 Stanford Women in Data Science Datathon as a high schooler. The competition involved extreme weather forecasting and can be accessed at https://www.kaggle.com/competitions/widsdatathon2023, with my winner interview and insights walkthrough avaliable at https://www.youtube.com/watch?v=eCui74vnLPo. 
+This repository contains my annotated winner solution code and slide presentation to the 2023 Stanford Women in Data Science Datathon as a high schooler. The competition involved extreme weather forecasting and can be accessed at https://www.kaggle.com/competitions/widsdatathon2023, with my winner interview and insights walkthrough avaliable at https://www.youtube.com/watch?v=eCui74vnLPo. 
 
 _________________________________________________________________________________________________
 Solution Summary:

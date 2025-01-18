@@ -11,10 +11,7 @@ I'm Zeyneb, a junior at Saratoga High School and the High School Winner of this 
 Data Exploration:
 
 Right from the start, the data presented some very interesting characteristics. There is a looong time gap between train and test data, a significant differnece in the value distritbutions of the features, and outliers that seems to have comparably more/less temperature change over time. Of course, these can result in some interesting behaviors in the models, explored later below.
-I explored and based some code on the following notebooks (Thank you!):
-https://www.kaggle.com/code/nicholasdominic/wids2023-data-buddies
-https://www.kaggle.com/code/kooaslansefat/wids-2023-bo-catboost-xai-pseudo-labeling
-https://www.kaggle.com/code/kooaslansefat/wids-2023-woman-life-freedom/notebook
+
 Interesting/Unintuitive Findings (?):
 
 In initial experiments, I label encoded features with ~50 distinct values in the train data as categorical features when building the model, then selected top (30%-15%) features based on shapley values. I also performed hyperparameter tuning with 3-5 fold cross validation (split based on location i.e., 'loc_group', or random split). The final output performed relatively poorly (RMSE ~1.5). Strangely , specifying categorical features explicitly into the CatBoost and LightGBM models decreased performance, as did location based splitting. Despite the risks of overfitting and data leakage, random splits and less feature selection seemed to do better.
